@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #F7F9FA;
+      color: #212121; 
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: #FFFFFF; 
+      box-shadow: 0 0 20px rgba(0,0,0,0.08);
+      border-radius: 8px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h1 {
+      color: #90CAF9; 
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #90CAF9; 
+      border-bottom: 2px solid #E0E0E0;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #90CAF9;
+      display: block;
+      margin: 0 auto;
+    }
+    .bio {
+      text-align:justify;
+      margin: 20px 0;
+      color: #616161; 
+    }
+    ul, ol {
+      line-height: 1.8;
+      padding-left: 25px;
+      color: #616161; 
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    a {
+      color: #4CAF50; 
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: #388E3C; 
+      text-decoration: underline;
+    }
+    .social-links {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .social-links a {
+      margin: 0 10px;
+      padding: 5px 10px;
+      border-radius: 4px;
+      background-color: #F7F9FA; 
+      transition: background-color 0.3s;
+    }
+    .social-links a:hover {
+      background-color: #E0E0E0; 
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #616161;
+      font-size: 0.9rem;
+      padding-top: 15px;
+      border-top: 1px solid #E0E0E0;
+    }
+    .success {
+      text-align: center;
+      color: #4CAF50; 
+    }
+    .warning {
+      color: #90CAF9; 
+    }
+    
+    /* Table Styles */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background-color: #FFFFFF;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #E0E0E0;
+    }
+    
+    th {
+      background-color: #90CAF9;
+      color: #212121;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+    
+    tr:hover {
+      background-color: #F7F9FA;
+    }
+    
+    tr:last-child td {
+      border-bottom: none;
+    }
+    
+    /* Form Styles */
+    .contact-form {
+      background-color: #F7F9FA;
+      padding: 25px;
+      border-radius: 8px;
+      margin: 20px 0;
+      border: 1px solid #E0E0E0;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+      color: #212121;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #E0E0E0;
+      border-radius: 6px;
+      font-size: 16px;
+      font-family: inherit;
+      transition: border-color 0.3s, box-shadow 0.3s;
+      box-sizing: border-box;
+      color: #212121;
+    }
+    
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #90CAF9;
+      box-shadow: 0 0 0 3px rgba(144, 202, 249, 0.2);
+    }
+    
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    
+    .submit-btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+      width: 100%;
+    }
+    
+    .submit-btn:hover {
+      background-color: #388E3C;
+      transform: translateY(-1px);
+    }
+    
+    .submit-btn:active {
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Abdullah Rashid</h1>
+      <img src="https://i.ibb.co/Y44QwHGR/IMG-9249-3.jpg" alt="Abdullah Rashid Photo">
+    </header>
+    
+    <section class="bio">
+      <p>Hello! I'm Abdullah, an iOS developer with a passion for building smooth, intuitive, and high-performance mobile applications. I specialize in front-end iOS development using Swift and have 1 year of hands-on experience creating engaging user interfaces and seamless app experiences.</p>
+      <p>I'm dedicated to continuously learning and adopting the latest technologies to enhance my development skills and deliver impactful mobile solutions.</p>
+    </section>
+    
+    <section class="success">
+      <p><span class="success">Currently available</span> for new projects and collaborations!</p>
+    </section>
+    
+    <section>
+      <h2>My Skills</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Technology</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>🦅 Swift & SwiftUI</td>
+            <td>Primary programming language for iOS development</td>
+          </tr>
+          <tr>
+            <td>🧩 Basic UIKit & Auto Layout</td>
+            <td>User interface framework and layout system</td>
+          </tr>
+          <tr>
+            <td>🛠️ Xcode & Interface Builder</td>
+            <td>Integrated development environment for iOS</td>
+          </tr>
+          <tr>
+            <td>🌐 RESTful APIs & JSON</td>
+            <td>Data communication and web services integration</td>
+          </tr>
+          <tr>
+            <td>📱 Responsive Interface Design</td>
+            <td>Creating adaptive user interfaces for different devices</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <section>
+      <h2>My Hobbies</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Hobby</th>
+            <th>Interest Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>🎮 Gaming</td>
+            <td>High</td>
+          </tr>
+          <tr>
+            <td>📷 Photography</td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td>✈️ Travelling</td>
+            <td>High</td>
+          </tr>
+          <tr>
+            <td>🔍 Venturing into new fields</td>
+            <td>Very High</td>
+          </tr>
+          <tr>
+            <td>⚽ Football</td>
+            <td>Medium</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <section>
+      <h2>Connect With Me</h2>
+      <div class="social-links">
+        <a href="https://github.com/Axplicit" target="_blank">GitHub</a>
+        <a href="https://axplicit.github.io" target="_blank">Portfolio Website</a>
+      </div>
+      <p style="text-align: center; margin-top: 15px;"><span class="warning">Note:</span> Currently redesigning my portfolio with new projects!</p>
+      
+      <div class="contact-form">
+        <h3>Get In Touch</h3>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Your Message *</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project or ask any questions..." required></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+    
+    <footer>
+      <p>&copy; 2025 Abdullah Rashid. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
